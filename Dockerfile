@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
   curl \
   git \
   rsync \
-  unzip \
+  unzip
 
 # Copy install scripts
 RUN mkdir /root/scripts
