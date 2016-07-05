@@ -12,7 +12,7 @@ if [ "$MYSQL_HOST" == 'localhost' ] ; then
 fi
 
 # Check MySQL configuration
-mysql -h $MYSQL_HOST -u $MYSQL_ROOT_USER -p$MYSQL_ROOT_PW -e "quit"
+mysql -h $MYSQL_HOST -u $MYSQL_ROOT_USER -p$MYSQL_ROOT_PASSWORD -e "quit"
 if [ ! $? == "0" ] ; then
   echo "Invalid MySQL configuration. Please verify MYSQL_* environment variables."
   exit 0
