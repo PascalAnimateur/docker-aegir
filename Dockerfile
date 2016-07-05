@@ -15,6 +15,9 @@ RUN mkdir /root/scripts
 ADD scripts/*.sh /root/scripts/
 
 # Apache2
-RUN /root/scripts/apache2-install.sh
+RUN bash /root/scripts/apache2-install.sh
+
+# PHP5
+RUN bash /root/scripts/php5-install.sh
 
 EXPOSE 80
